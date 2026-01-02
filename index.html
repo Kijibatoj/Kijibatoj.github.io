@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page-title">Mi Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Selector de idioma -->
+    <div class="lang-selector">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-link" data-i18n="nav-home">Inicio</a>
+            <a href="#about" class="nav-link" data-i18n="nav-about">Sobre mí</a>
+            <a href="#projects" class="nav-link" data-i18n="nav-projects">Proyectos</a>
+            <a href="#skills" class="nav-link" data-i18n="nav-skills">Habilidades</a>
+            <a href="#contact" class="nav-link" data-i18n="nav-contact">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="glitch" data-text="[ ABISAI TERAN ]">[ ABISAI TERAN ]</h1>
+            <p class="subtitle" data-i18n="hero-subtitle">Flutter Dev / Python Dev / CEO Kyra</p>
+            <div class="hero-description">
+                <p data-i18n="hero-description">
+                    Bienvenido a mi espacio digital. Desarrollador especializado en Flutter y Python desde Caracas, Venezuela.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about-title">&gt; Sobre mí_</h2>
+            <div class="about-content">
+                <p data-i18n="about-text">
+                    Soy un apasionado creador que combina tecnología y diseño para crear experiencias únicas.
+                    Me especializo en desarrollo web, diseño de interfaces y proyectos creativos.
+                </p>
+                <p data-i18n="about-text-2">
+                    Constantemente estoy aprendiendo nuevas tecnologías y expandiendo mis habilidades
+                    para crear proyectos innovadores.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects-title">&gt; Proyectos_</h2>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title" data-i18n="project-1-title">Bimay</h3>
+                        <span class="project-status">[ COMPLETO ]</span>
+                    </div>
+                    <p class="project-description" data-i18n="project-1-desc">
+                        Sistema web para gestión integral de ventas de accesorios telefónicos y computadoras. Incluye inventario, reportes y control de clientes.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">SCSS</span>
+                        <span class="tag">Web</span>
+                        <span class="tag">Sales</span>
+                    </div>
+                    <a href="https://github.com/Kijibatoj/Bimay" target="_blank" class="project-link" data-i18n="project-link">Ver proyecto →</a>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title" data-i18n="project-2-title">InmoGestion</h3>
+                        <span class="project-status">[ ACTIVO ]</span>
+                    </div>
+                    <p class="project-description" data-i18n="project-2-desc">
+                        Aplicación móvil Flutter para gestión local de catálogos inmobiliarios. Incluye autenticación, creación, búsqueda y edición de propiedades.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag">Mobile</span>
+                    </div>
+                    <a href="https://github.com/Kijibatoj/InmoGestion" target="_blank" class="project-link" data-i18n="project-link">Ver proyecto →</a>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title" data-i18n="project-3-title">Flutter App Generator</h3>
+                        <span class="project-status">[ OPEN SOURCE ]</span>
+                    </div>
+                    <p class="project-description" data-i18n="project-3-desc">
+                        Librería que genera componentes y aplicaciones Flutter de forma rápida y eficiente. Acelera el desarrollo de proyectos móviles.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Dart</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">CLI</span>
+                    </div>
+                    <a href="https://github.com/Kijibatoj/Flutter-app-generator" target="_blank" class="project-link" data-i18n="project-link">Ver proyecto →</a>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">AsimpleBot Discord</h3>
+                        <span class="project-status">[ COMPLETO ]</span>
+                    </div>
+                    <p class="project-description">
+                        Bot moderador para Discord desarrollado en Python. Automatiza tareas de moderación y gestión de comunidades.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Discord</span>
+                        <span class="tag">Bot</span>
+                    </div>
+                    <a href="https://github.com/Kijibatoj/AsimpleBot-Discord" target="_blank" class="project-link" data-i18n="project-link">Ver proyecto →</a>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Checkeador PacoWeb</h3>
+                        <span class="project-status">[ HERRAMIENTA ]</span>
+                    </div>
+                    <p class="project-description">
+                        Validador de facturas sin base de datos. Herramienta web eficiente para verificación rápida de documentos.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Web</span>
+                        <span class="tag">Tools</span>
+                    </div>
+                    <a href="https://github.com/Kijibatoj/Checkeador-Pacoweb" target="_blank" class="project-link" data-i18n="project-link">Ver proyecto →</a>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">SimpleCRUD Django</h3>
+                        <span class="project-status">[ DEMO ]</span>
+                    </div>
+                    <p class="project-description">
+                        Implementación de operaciones CRUD básicas con Django. Proyecto educativo para backend Python.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Backend</span>
+                    </div>
+                    <a href="https://github.com/Kijibatoj/SimpleCRUDdjango" target="_blank" class="project-link" data-i18n="project-link">Ver proyecto →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills-title">&gt; Habilidades_</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-i18n="skills-frontend">Frontend</h3>
+                    <ul class="skill-list">
+                        <li>Flutter</li>
+                        <li>Next.js</li>
+                        <li>JavaScript</li>
+                        <li>TailwindCSS</li>
+                        <li>Vite</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 data-i18n="skills-backend">Backend</h3>
+                    <ul class="skill-list">
+                        <li>Python / Django</li>
+                        <li>Node.js</li>
+                        <li>Dart</li>
+                        <li>Java</li>
+                        <li>APIs REST</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 data-i18n="skills-database">Bases de Datos</h3>
+                    <ul class="skill-list">
+                        <li>Firebase</li>
+                        <li>Supabase</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>MySQL / SQLite</li>
+                        <li>GraphQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact-title">&gt; Contacto_</h2>
+            <div class="contact-content">
+                <p data-i18n="contact-text">
+                    ¿Interesado en colaborar o tienes alguna pregunta? No dudes en contactarme.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:abisai@kyra.dev" class="contact-link">
+                        <span data-i18n="contact-email">✉ Email</span>
+                    </a>
+                    <a href="https://github.com/Kijibatoj" target="_blank" class="contact-link">
+                        <span>⚡ GitHub</span>
+                    </a>
+                    <a href="https://twitter.com/kijibatoj" target="_blank" class="contact-link">
+                        <span>⚡ Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 <span data-i18n="footer-text">Hecho con</span> ♥ <span data-i18n="footer-by">por</span> Abisai Teran</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
