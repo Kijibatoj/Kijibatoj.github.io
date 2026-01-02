@@ -28,12 +28,46 @@ function changeLanguage(lang) {
 
 // Actualizar estado visual de los botones de idioma
 function updateLanguageButtons(lang) {
-    const buttons = document.querySelectorAll('.lang-btn');
+    const buttons = document.querySelectorAll('.lang-option');
     buttons.forEach(btn => {
         if (btn.getAttribute('data-lang') === lang) {
             btn.classList.add('active');
         } else {
             btn.classList.remove('active');
+        }
+    });
+
+    // Actualizar el texto del botón principal
+    const currentLangText = document.querySelector('.current-lang');
+    if (currentLangText) {
+        currentLangText.textContent = lang.toUpperCase();
+    }
+}
+
+// Toggle del dropdown de idiomas
+function setupLanguageDropdown() {
+    const langToggle = document.getElementById('langToggle');
+    const langDropdown = document.getElementById('langDropdown');
+
+    if (!langToggle || !langDropdown) return;
+
+    // Toggle al hacer clic en el botón
+    langToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        langDropdown.classList.toggle('show');
+    });
+
+    // Cerrar al hacer clic fuera
+    document.addEventListener('click', function(e) {
+        if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
+            langDropdown.classList.remove('show');
+        }
+    });
+
+    // Cerrar al presionar Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            langDropdown.classList.remove('show');
         }
     });
 }
@@ -143,12 +177,17 @@ function setupHeaderHide() {
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', function() {
+    // Configurar dropdown de idiomas
+    setupLanguageDropdown();
+
     // Configurar event listeners para los botones de idioma
-    const langButtons = document.querySelectorAll('.lang-btn');
+    const langButtons = document.querySelectorAll('.lang-option');
     langButtons.forEach(button => {
         button.addEventListener('click', function() {
             const lang = this.getAttribute('data-lang');
             changeLanguage(lang);
+            // Cerrar el dropdown después de seleccionar
+            document.getElementById('langDropdown').classList.remove('show');
         });
     });
 

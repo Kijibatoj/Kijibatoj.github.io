@@ -10,9 +10,15 @@
 <body>
     <!-- Selector de idioma -->
     <div class="lang-selector">
-        <button class="lang-btn active" data-lang="es">ES</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-toggle" id="langToggle">
+            <span class="lang-icon">🌐</span>
+            <span class="current-lang">ES</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-option active" data-lang="es">🇪🇸 Español</button>
+            <button class="lang-option" data-lang="en">🇬🇧 English</button>
+            <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+        </div>
     </div>
 
     <!-- Navegación -->
