@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abisai Teran</title>
-    <link rel="icon" href="assets/DIEBESSERE.png" type="image/x-icon">
+    <meta name="description" content="Abisai Teran — Flutter Dev, Python Dev y CEO de Kyra. Desarrollo de aplicaciones móviles, sistemas backend y agentes de IA para empresas.">
+    <link rel="icon" href="assets/FOTOPERFIL.jpg" type="image/jpeg">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <main class="card">
 
-        <header class="card-header">
-            <img src="assets/DIEBESSERE.png" alt="Abisai Teran" class="avatar">
+        <header class="card-header reveal">
+            <div class="avatar-wrap">
+                <img src="assets/FOTOPERFIL.jpg" alt="Abisai Teran" class="avatar">
+            </div>
             <div>
                 <h1>Abisai Teran</h1>
                 <p class="role">Flutter Dev · Python Dev · CEO @Kyra</p>
@@ -19,12 +22,13 @@
             </div>
         </header>
 
-        <p class="about">
+        <p class="about reveal">
             Desarrollo aplicaciones móviles con Flutter y sistemas backend con Python/Django.
-            Lidero <a href="https://github.com/Kyragod" target="_blank">@Kyra</a>, una organización enfocada en software a medida.
+            Lidero <a href="https://github.com/Kyragod" target="_blank" rel="noopener">@Kyra</a>, una organización enfocada en software a medida.
+            Actualmente construyo <a href="#hades">HADES</a>, un sistema multiagente de IA para automatización empresarial.
         </p>
 
-        <section class="block">
+        <section class="block reveal">
             <span class="label">stack</span>
             <div class="tags">
                 <span>Flutter</span>
@@ -37,45 +41,185 @@
                 <span>Firebase</span>
                 <span>Supabase</span>
                 <span>PostgreSQL</span>
+                <span>LLM / Agentes</span>
             </div>
         </section>
 
-        <section class="block">
-            <span class="label">proyectos</span>
+        <!-- ============ HADES ============ -->
+        <section class="block reveal" id="hades">
+            <span class="label">proyecto destacado</span>
+            <article class="hades">
+                <a class="hades-media" href="#hades" aria-label="Grafo de agentes HADES">
+                    <img src="assets/FOTO-GRAFO-IA.jpg" alt="Grafo de conocimiento y orquestación de agentes de HADES" loading="lazy">
+                </a>
+                <div class="hades-body">
+                    <h2>HADES <span class="badge badge-live">en desarrollo</span></h2>
+                    <p>
+                        Plataforma de inteligencia artificial para empresas: múltiples agentes especializados
+                        trabajando bajo un <strong>orquestador central</strong> que reparte tareas, coordina
+                        contexto entre ellos y automatiza flujos de trabajo a nivel empresarial.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Orquestador que enruta tareas al agente adecuado</li>
+                        <li>Agentes especializados por dominio (datos, documentos, soporte, operaciones)</li>
+                        <li>Memoria compartida y grafo de conocimiento entre agentes</li>
+                        <li>Automatización de flujos internos end-to-end</li>
+                    </ul>
+                    <div class="tags tags-sm">
+                        <span>Python</span>
+                        <span>LLM</span>
+                        <span>Multiagente</span>
+                        <span>Orquestación</span>
+                        <span>RAG</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- ============ PROYECTOS EN PRODUCCIÓN ============ -->
+        <section class="block reveal">
+            <span class="label">en producción</span>
+            <div class="showcase">
+
+                <article class="project-card">
+                    <a class="shot" href="https://mercaiito-web.vercel.app" target="_blank" rel="noopener">
+                        <img src="assets/shot-mercaiito.jpg" alt="Captura de la web de Mercaiito" loading="lazy">
+                    </a>
+                    <div class="project-card-body">
+                        <h3>
+                            <a href="https://mercaiito-web.vercel.app" target="_blank" rel="noopener">Mercaiito ↗</a>
+                        </h3>
+                        <p>App para controlar los gastos del mercado: compara precios, registra compras y sigue la tasa BCV. Disponible en Google Play.</p>
+                        <div class="tags tags-sm">
+                            <span>Flutter</span>
+                            <span>Landing</span>
+                            <span>Fintech</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a class="shot" href="https://sie-os.vercel.app/#/login" target="_blank" rel="noopener">
+                        <img src="assets/shot-sieos.jpg" alt="Captura del login de SIE OS" loading="lazy">
+                    </a>
+                    <div class="project-card-body">
+                        <h3>
+                            <a href="https://sie-os.vercel.app/#/login" target="_blank" rel="noopener">SIE OS ↗</a>
+                        </h3>
+                        <p>Sistema de cajas de ahorro digitales: aportes, rendimientos, préstamos e historial, con gestión segura de usuarios.</p>
+                        <div class="tags tags-sm">
+                            <span>Flutter Web</span>
+                            <span>Dart</span>
+                            <span>Fintech</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a class="shot" href="https://she-spa.vercel.app" target="_blank" rel="noopener">
+                        <img src="assets/shot-shespa.jpg" alt="Captura de la web de SHE SPA" loading="lazy">
+                    </a>
+                    <div class="project-card-body">
+                        <h3>
+                            <a href="https://she-spa.vercel.app" target="_blank" rel="noopener">SHE SPA ↗</a>
+                        </h3>
+                        <p>Sitio para un centro de belleza y bienestar capilar: catálogo de servicios, precios, ubicación y agendamiento de citas.</p>
+                        <div class="tags tags-sm">
+                            <span>Web</span>
+                            <span>Landing</span>
+                            <span>Booking</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCIA ============ -->
+        <section class="block reveal">
+            <span class="label">participación en desarrollo</span>
+            <p class="section-note">Aplicaciones en las que formé parte del equipo de desarrollo.</p>
+            <ul class="experience">
+                <li>
+                    <span class="exp-name">SNI</span>
+                    <span class="exp-desc">— Sistema Nacional de Ingreso </span>
+                </li>
+                <li>
+                    <span class="exp-name">SUVE</span>
+                    <span class="exp-desc">— Aplicación del metro de Caracas</span>
+                </li>
+                <li>
+                    <span class="exp-name">MRW</span>
+                    <span class="exp-desc">— Aplicación de logística de envios y creacion de envios para MRW</span>
+                </li>
+                <li>
+                    <span class="exp-name">Tropixus</span>
+                    <span class="exp-desc">— Plataforma digital de servicios, eventos en alemania</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ============ OPEN SOURCE ============ -->
+        <section class="block reveal">
+            <span class="label">open source</span>
             <ul class="projects">
                 <li>
-                    <a href="https://github.com/Kijibatoj/Bimay" target="_blank">Bimay</a>
+                    <a href="https://github.com/Kijibatoj/Bimay" target="_blank" rel="noopener">Bimay</a>
                     <span>— Sistema web de ventas para accesorios telefónicos</span>
                 </li>
                 <li>
-                    <a href="https://github.com/Kijibatoj/InmoGestion" target="_blank">InmoGestion</a>
+                    <a href="https://github.com/Kijibatoj/InmoGestion" target="_blank" rel="noopener">InmoGestion</a>
                     <span>— App Flutter para gestión de catálogos inmobiliarios</span>
                 </li>
                 <li>
-                    <a href="https://github.com/Kijibatoj/Flutter-app-generator" target="_blank">Flutter App Generator</a>
+                    <a href="https://github.com/Kijibatoj/Flutter-app-generator" target="_blank" rel="noopener">Flutter App Generator</a>
                     <span>— CLI para generar proyectos Flutter rápidamente</span>
                 </li>
                 <li>
-                    <a href="https://github.com/Kijibatoj/AsimpleBot-Discord" target="_blank">AsimpleBot Discord</a>
+                    <a href="https://github.com/Kijibatoj/AsimpleBot-Discord" target="_blank" rel="noopener">AsimpleBot Discord</a>
                     <span>— Bot moderador para Discord en Python</span>
                 </li>
                 <li>
-                    <a href="https://github.com/Kijibatoj/Checkeador-Pacoweb" target="_blank">Checkeador PacoWeb</a>
+                    <a href="https://github.com/Kijibatoj/Checkeador-Pacoweb" target="_blank" rel="noopener">Checkeador PacoWeb</a>
                     <span>— Validador de facturas sin base de datos</span>
                 </li>
                 <li>
-                    <a href="https://github.com/Kijibatoj/SimpleCRUDdjango" target="_blank">SimpleCRUD Django</a>
+                    <a href="https://github.com/Kijibatoj/SimpleCRUDdjango" target="_blank" rel="noopener">SimpleCRUD Django</a>
                     <span>— CRUD educativo con Django y Python</span>
                 </li>
             </ul>
         </section>
 
-        <footer class="card-footer">
+        <footer class="card-footer reveal">
             <a href="mailto:teranabisai471@gmail.com">✉ email</a>
-            <a href="https://github.com/Kijibatoj" target="_blank">github</a>
-            <a href="https://twitter.com/kijibatoj" target="_blank">twitter</a>
+            <a href="https://github.com/Kijibatoj" target="_blank" rel="noopener">github</a>
+            <a href="cv.html">cv</a>
         </footer>
 
     </main>
+
+    <script>
+        // Reveal al hacer scroll — animación ligera, sin librerías.
+        (function () {
+            var items = document.querySelectorAll('.reveal');
+            var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (reduce || !('IntersectionObserver' in window)) {
+                items.forEach(function (el) { el.classList.add('is-visible'); });
+                return;
+            }
+
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: '0px 0px -40px 0px', threshold: 0.05 });
+
+            items.forEach(function (el) { io.observe(el); });
+        })();
+    </script>
 </body>
 </html>
