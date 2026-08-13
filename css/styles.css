@@ -216,6 +216,15 @@ img {
     flex-wrap: wrap;
 }
 
+.hades-body h2 a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.hades-body h2 a:hover {
+    text-decoration: underline;
+}
+
 .hades-body p {
     font-size: 0.88rem;
     color: var(--text);
